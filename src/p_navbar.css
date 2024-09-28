@@ -1,0 +1,23 @@
+/* Navbar.css */
+
+.p_navbar {
+    background-color: rgb(235, 205, 149); /* Grey background color */
+    height: 100px; /* Set a height for the navbar */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .pcontainer {
+    width: 100%; /* Full width container */
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Space between potential future elements */
+    padding: 0 1rem; /* Optional padding */
+  }
+  h1{
+    color:black;
+    margin-left: 520px;
+    font-family: 'Playfair Display', serif; /* Example: Using Playfair Display */
+    font-size: 60px;
+    font-weight: 700;
+  }
+  

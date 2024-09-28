@@ -1,0 +1,116 @@
+/* PredictionPage.css */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.prediction-page {
+    text-align: center;
+    padding: 0px;
+}
+
+.phome {
+    height: 663px;
+}
+
+body {
+    background: #000;
+}
+
+form {
+    max-width: 420px;
+    margin: 50px auto;
+    background-color: #000;
+}
+
+.feedback-input {
+    color: grey;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 20px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid rgb(235, 205, 149);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/* Style the placeholder option text */
+.feedback-input option[value=""] {
+    color: grey; /* Grey color for the placeholder option */
+    font-size: 14px; /* Smaller font size for placeholder option */
+}
+
+/* Additional styles for select elements */
+select.feedback-input {
+    color: grey; /* Ensure the selected option text remains white */
+}
+
+/* Style for focused feedback input */
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: rgb(235, 205, 149);
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}
+
+/* Styling for the prediction message */
+.prediction-message {
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: 2px solid black; /* Red border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #000; /* Match the background color */
+    font-family: 'Montserrat', sans-serif; /* Font for prediction text */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    color: rgb(235, 205, 149); /* Light yellow text */
+    text-align: center;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Success and error classes */
+.prediction-message.success {
+    color: rgb(235, 205, 149); /* Light yellow for successful predictions */
+    border-color: #4CAF50; /* Green border for success */
+}
+
+.prediction-message.error {
+    color: #e74c3c; /* Red text for error messages */
+    border-color: #e74c3c; /* Red border for errors */
+}
+
+.prediction-message:hover {
+    background-color: #CC4949; /* Red background on hover */
+    color: white; /* White text on hover */
+}
